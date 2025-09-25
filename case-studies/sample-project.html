@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Mobile App - Ryan Ragusa UX Designer</title>
+    <meta name="description" content="Case study: Redesigning the shopping experience for better conversion rates and user satisfaction. UX design by Ryan Ragusa.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">Ryan Ragusa</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#work" onclick="navigateToWork()">Work</a></li>
+                    <li><a href="../index.html#about" onclick="navigateToAbout()">About</a></li>
+                    <li><a href="../index.html#contact" onclick="navigateToContact()">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="case-study-detail">
+                <a href="../index.html" class="back-button" onclick="navigateToWork()">← Back to Work</a>
+
+                <div class="case-study-header">
+                    <h1>E-commerce Mobile App</h1>
+                    <p class="lead">Redesigning the shopping experience for better conversion rates and user satisfaction</p>
+                </div>
+
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Lead UX Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>3 months</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Team</h4>
+                        <p>4 members</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Problem Statement</h2>
+                    <p>The existing mobile app had a 15% conversion rate, well below industry standards. Users were abandoning their carts at checkout and struggling to find products efficiently. Our goal was to identify pain points and redesign the experience to increase conversions and user satisfaction.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Research & Discovery</h2>
+                    <h3>User Interviews</h3>
+                    <p>We conducted 20 user interviews with existing customers to understand their shopping behaviors, pain points, and expectations. Key findings included:</p>
+                    <ul>
+                        <li>Users found the navigation confusing</li>
+                        <li>Checkout process was too long and complex</li>
+                        <li>Search functionality was ineffective</li>
+                        <li>Product information was insufficient for decision making</li>
+                    </ul>
+
+                    <h3>Analytics Review</h3>
+                    <p>Analysis of user behavior data revealed specific drop-off points and helped prioritize which areas needed the most attention.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Design Process</h2>
+                    <h3>Information Architecture</h3>
+                    <p>Restructured the app's navigation based on user mental models and card sorting results.</p>
+
+                    <h3>Wireframing & Prototyping</h3>
+                    <p>Created low-fidelity wireframes for key user flows, then developed interactive prototypes for usability testing.</p>
+
+                    <h3>Visual Design</h3>
+                    <p>Applied the brand's visual language while improving contrast, hierarchy, and accessibility standards.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Results</h2>
+                    <ul>
+                        <li><strong>40% increase</strong> in conversion rate</li>
+                        <li><strong>60% reduction</strong> in cart abandonment</li>
+                        <li><strong>4.2 star rating</strong> in app store (up from 2.8)</li>
+                        <li><strong>25% increase</strong> in average order value</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Key Learnings</h2>
+                    <p>This project reinforced the importance of user research in driving design decisions. The most impactful changes came from addressing fundamental usability issues rather than adding new features. Regular testing throughout the process helped validate our assumptions and prevented costly mistakes.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Next Steps</h2>
+                    <p>Future improvements will focus on personalization features and advanced search capabilities based on user feedback and ongoing analytics.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Navigation functions for case study pages
+        function navigateToWork() {
+            window.location.href = '../index.html#work';
+            // After navigation, show the work page
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('work');
+                }
+            }, 100);
+        }
+
+        function navigateToAbout() {
+            window.location.href = '../index.html#about';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('about');
+                }
+            }, 100);
+        }
+
+        function navigateToContact() {
+            window.location.href = '../index.html#contact';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('contact');
+                }
+            }, 100);
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>

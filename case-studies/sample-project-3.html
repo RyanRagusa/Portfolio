@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform - Ryan Ragusa UX Designer</title>
+    <meta name="description" content="Case study: Educational platform redesign focused on student engagement and retention. UX design by Ryan Ragusa.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">Ryan Ragusa</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#work" onclick="navigateToWork()">Work</a></li>
+                    <li><a href="../index.html#about" onclick="navigateToAbout()">About</a></li>
+                    <li><a href="../index.html#contact" onclick="navigateToContact()">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="case-study-detail">
+                <a href="../index.html" class="back-button" onclick="navigateToWork()">← Back to Work</a>
+
+                <div class="case-study-header">
+                    <h1>Learning Platform</h1>
+                    <p class="lead">Educational platform redesign focused on student engagement and retention</p>
+                </div>
+
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>UX Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>5 months</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Team</h4>
+                        <p>8 members</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Problem Statement</h2>
+                    <p>The online learning platform had a 35% course completion rate, well below industry standards. Students were dropping out due to lack of engagement, unclear learning paths, and overwhelming content presentation.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Research & Discovery</h2>
+                    <h3>Student Interviews</h3>
+                    <p>Interviewed 30 students across different demographics to understand learning preferences and barriers:</p>
+                    <ul>
+                        <li>Students felt overwhelmed by too many options</li>
+                        <li>Progress tracking was unclear and demotivating</li>
+                        <li>Content felt disconnected from real-world applications</li>
+                        <li>Social learning elements were missing</li>
+                    </ul>
+
+                    <h3>Learning Science Research</h3>
+                    <p>Researched cognitive load theory, spaced repetition, and gamification principles to inform design decisions.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Design Process</h2>
+                    <h3>Personalized Learning Paths</h3>
+                    <p>Created adaptive learning paths based on student goals, prior knowledge, and learning pace.</p>
+
+                    <h3>Progress Visualization</h3>
+                    <p>Designed clear progress indicators and milestone celebrations to maintain motivation.</p>
+
+                    <h3>Social Learning Features</h3>
+                    <p>Integrated discussion forums, peer reviews, and study groups to create community engagement.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Results</h2>
+                    <ul>
+                        <li><strong>60% increase</strong> in course completion rates</li>
+                        <li><strong>45% improvement</strong> in student satisfaction scores</li>
+                        <li><strong>80% of students</strong> reported feeling more motivated</li>
+                        <li><strong>2.5x increase</strong> in platform engagement time</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Key Learnings</h2>
+                    <p>Personalization is crucial in education, but it must be balanced with clear structure. Students need both freedom to explore and guidance to stay on track. The most successful features were those that made progress visible and celebrated small wins along the way.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function navigateToWork() {
+            window.location.href = '../index.html#work';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('work');
+                }
+            }, 100);
+        }
+
+        function navigateToAbout() {
+            window.location.href = '../index.html#about';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('about');
+                }
+            }, 100);
+        }
+
+        function navigateToContact() {
+            window.location.href = '../index.html#contact';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('contact');
+                }
+            }, 100);
+        }
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>

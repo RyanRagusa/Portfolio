@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Patient Portal - Ryan Ragusa UX Designer</title>
+    <meta name="description" content="Case study: Simplifying complex medical information for patients while maintaining HIPAA compliance. UX design by Ryan Ragusa.">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="../index.html" class="logo">Ryan Ragusa</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#work" onclick="navigateToWork()">Work</a></li>
+                    <li><a href="../index.html#about" onclick="navigateToAbout()">About</a></li>
+                    <li><a href="../index.html#contact" onclick="navigateToContact()">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="case-study-detail">
+                <a href="../index.html" class="back-button" onclick="navigateToWork()">← Back to Work</a>
+
+                <div class="case-study-header">
+                    <h1>Healthcare Patient Portal</h1>
+                    <p class="lead">Simplifying complex medical information for patients while maintaining HIPAA compliance</p>
+                </div>
+
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <h4>Role</h4>
+                        <p>Lead UX Designer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Duration</h4>
+                        <p>6 months</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Team</h4>
+                        <p>12 members</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Problem Statement</h2>
+                    <p>Patients were overwhelmed by complex medical jargon and couldn't easily find critical health information. The existing portal had poor usability, leading to frequent support calls and patient frustration. The challenge was to simplify without compromising accuracy or compliance.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Research & Discovery</h2>
+                    <h3>Patient Interviews</h3>
+                    <p>Conducted interviews with 25 patients of varying ages and health literacy levels:</p>
+                    <ul>
+                        <li>Medical terminology was intimidating and confusing</li>
+                        <li>Important information was buried in lengthy documents</li>
+                        <li>Patients wanted to understand their health trends over time</li>
+                        <li>Family members needed easy access for elderly patients</li>
+                    </ul>
+
+                    <h3>Healthcare Professional Input</h3>
+                    <p>Worked closely with doctors and nurses to understand information hierarchy and compliance requirements.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Design Process</h2>
+                    <h3>Information Architecture</h3>
+                    <p>Restructured information based on patient priorities rather than medical categories.</p>
+
+                    <h3>Plain Language Design</h3>
+                    <p>Collaborated with medical writers to translate complex terms into patient-friendly language without losing accuracy.</p>
+
+                    <h3>Accessibility Focus</h3>
+                    <p>Ensured WCAG 2.1 compliance and tested with patients of varying abilities and technology comfort levels.</p>
+                </div>
+
+                <div class="section">
+                    <h2>Results</h2>
+                    <ul>
+                        <li><strong>50% reduction</strong> in support tickets</li>
+                        <li><strong>75% of patients</strong> found information easily</li>
+                        <li><strong>40% increase</strong> in portal engagement</li>
+                        <li><strong>92% satisfaction</strong> score from patients</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>Key Learnings</h2>
+                    <p>Healthcare UX requires balancing multiple stakeholder needs—patients want simplicity, doctors need completeness, and regulations demand compliance. The key was creating layered information architecture where patients could access basic information quickly but drill down for details when needed.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function navigateToWork() {
+            window.location.href = '../index.html#work';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('work');
+                }
+            }, 100);
+        }
+
+        function navigateToAbout() {
+            window.location.href = '../index.html#about';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('about');
+                }
+            }, 100);
+        }
+
+        function navigateToContact() {
+            window.location.href = '../index.html#contact';
+            setTimeout(() => {
+                if (window.showPage) {
+                    showPage('contact');
+                }
+            }, 100);
+        }
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+</body>
+</html>
