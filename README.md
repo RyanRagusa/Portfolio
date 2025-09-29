@@ -4,7 +4,7 @@ A professional UX designer portfolio showcasing user-centered design solutions a
 
 ## 🌟 Live Demo
 
-Visit the live portfolio: [https://ryanr.github.io/Portfolio](https://ryanr.github.io/Portfolio)
+Visit the live portfolio: [https://ryanragusa.github.io/Portfolio](https://ryanragusa.github.io/Portfolio)
 
 ## 📋 Features
 
