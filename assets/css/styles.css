@@ -81,6 +81,10 @@ p {
     color: var(--color-text-light);
 }
 
+strong, b {
+    color: var(--color-text);
+}
+
 a {
     color: var(--color-accent);
     text-decoration: none;
@@ -257,6 +261,22 @@ main {
     color: white;
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+/* Case study detail page images */
+.case-study-detail .case-study-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background: none;
+    margin: 1.5rem 0;
+}
+
+.case-study-detail .case-study-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
 }
 
 .case-study-card h3 {
